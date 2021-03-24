@@ -23,7 +23,8 @@
       </ul>
       <ul>
         <li>
-          <button type="button">Войти</button>
+          <!-- <button type="button">Войти</button> -->
+          <a href="login.html">Войти</a>
         </li>
       </ul>
     </nav>
@@ -71,7 +72,7 @@
     <section>
       <h2>Фотогалерея</h2>
       <figure>
-        <img src="img/studio.jpg" width="286" height="172" alt="Интерьер">
+        <img src="img/studio.jpg" width="286" height="164" alt="Интерьер">
       </figure>
       <button type="button">Назад</button>
       <button type="button">Вперед</button>
@@ -98,7 +99,29 @@
       <p>
         Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
       </p>
-      <!-- Здесь будет форма -->
+      <form action="#" method="POST">
+        <p>
+          <label for="appointment-date">Дата</label>
+          <input type="date" id="appointment-date" name="date" value="2017-10-08">
+        </p>
+
+        <p>
+          <label for="appointment-time">Время</label>
+          <input type="time" id="appointment-time" name="time" value="10:00">
+        </p>
+
+        <p>
+          <label for="appointment-name">Ваше имя</label>
+          <input type="text" id="appointment-name" name="name" value=" " placeholder="Борода">
+        </p>
+
+        <p>
+          <label for="appointment-phone">Телефон</label>
+          <input type="tel" id="appointment-phone" name="phone" value=" " placeholder="+7 123 456-78-90">
+        </p>
+
+        <button type="submit">Отправить</button>
+      </form>
     </section>
   </main>
 
@@ -127,12 +150,40 @@
   <section>
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <button type="button">Закрыть</button>
+
+    <form action="#" method="POST">
+      <p>
+        <label for="user-login">Логин</label>
+        <input type="email" id="user-login" name="login" placeholder="email@example.com">
+      </p>
+
+      <p>
+        <label for="user-password">Пароль</label>
+        <input type="password" id="user-password" name="password" placeholder="**********">
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" name="remember">
+          Запомните меня
+        </label>
+        <a href="#">Восстановить пароль</a>
+      </p>
+      <button type="submit">
+        Войти
+      </button>
+    </form>
+    <button type="button">
+      Закрыть
+    </button>
   </section>
 
   <section>
     <h2>Как до нас добраться</h2>
+    <p>
+      <img src="img/map.jpg" width="780" height="480"
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
     <button type="button">Закрыть</button>
   </section>
 </body>
