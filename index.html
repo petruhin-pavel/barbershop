@@ -17,19 +17,23 @@
       <a class="main-header-logo">
         <img src="img/svg/index-logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
       </a>
-      <ul class="site-navigation">
-        <li><a href="info.html">информация</a></li>
-        <li><a href="news.html">новости</a></li>
-        <li><a href="price.html">прайс-лист</a></li>
-        <li><a href="catalog.html">магазин</a></li>
-        <li><a href="contacts.html">контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <!-- <button type="button">Войти</button> -->
-          <a class="login-link" href="login.html">Войти</a>
-        </li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="info.html">информация</a></li>
+            <li><a href="news.html">новости</a></li>
+            <li><a href="price.html">прайс-лист</a></li>
+            <li><a href="catalog.html">магазин</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li>
+              <!-- <button type="button">Войти</button> -->
+              <a class="login-link" href="login.html">Войти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="container">
@@ -136,25 +140,27 @@
   </main>
 
   <footer class="main-footer">
-    <p class="footer-contacts">
-      Барбершоп "Бородинский"<br>
-      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a href="map.html">Как нас найти?</a><br>
-      Телефон: +7 (812) 666-02-66
-    </p>
+    <div class="container">
+      <p class="footer-contacts">
+        Барбершоп "Бородинский"<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
 
-    <div class="footer-social">
-      <p>Давайте дружить!</p>
-      <ul>
-        <li><a class="social-button" href="#"></a>Вконтакте</li>
-        <li><a class="social-button" href="#"></a>Фейсбук</li>
-        <li><a class="social-button" href="#"></a>Инстаграм</li>
-      </ul>
+      <div class="footer-social">
+        <p>Давайте дружить!</p>
+        <ul>
+          <li><a class="social-button" href="#"></a>Вконтакте</li>
+          <li><a class="social-button" href="#"></a>Фейсбук</li>
+          <li><a class="social-button" href="#"></a>Инстаграм</li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        Разработано:
+        <a class="button" href="https://ilbuild.ru/">ilbuild</a>
+      </p>
     </div>
-    <p class="footer-copyright">
-      Разработано:
-      <a class="button" href="https://ilbuild.ru/">ilbuild</a>
-    </p>
   </footer>
 
   <section class="modal modal-login">
