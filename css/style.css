@@ -228,11 +228,13 @@ a{
 .user-navigation,
 .site-navigation{
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   list-style: none;
 }
 
 .site-navigation{
+  display: flex;
+  justify-content: space-around;
   width: 620px;
 }
 .user-navigation{
@@ -283,6 +285,12 @@ a{
 
 .footer-social{
   width: 145px;
+}
+
+.footer-social ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
 }
 
 .footer-copyright{
